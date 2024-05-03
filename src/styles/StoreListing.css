@@ -1,0 +1,20 @@
+/* src/styles/StoreListing.css */
+.container {
+    margin-top: 40px;
+    text-align: center; /* This will center the text inside the container */
+}
+
+.card {
+    border-bottom: 1px solid #E8E9EB; /* Adds a border to each store card */
+    margin-bottom: 20px; /* Adds space between cards */
+}
+
+.card-title {
+    font-weight: bold; /* Makes the card title bold */
+}
+
+.card-text {
+    margin-top: 5px; /* Adds margin above the card text */
+}
+
+

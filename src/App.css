@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* You can choose your font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar styling */
+.navbar {
+  background-color: #f8f9fa; /* Light grey background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #007bff !important; /* Bootstrap primary color for links */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Background image with form styling */
+.background-with-form {
+  width: 100%;
+  min-height: 220px;  /* or 100vh if you want it to cover the full viewport height */
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  background-position: right center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url('./styles/assets/food.jpg');
+  background-color: #deedd6;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Store listings styling */
+.store-listings {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

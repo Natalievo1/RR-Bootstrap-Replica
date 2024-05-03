@@ -1,11 +1,17 @@
-import './App.css';
+import React from 'react';
+import BackgroundWithForm from './components/BackGroundForm';
+import NavbarComponent from './components/NavbarComponent';
+import StoreListings from './components/StoreListings';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <NavbarComponent />
+      <BackgroundWithForm />
+      <StoreListings />
     </div>
   );
 }
 
 export default App;
+
